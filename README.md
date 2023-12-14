@@ -1,6 +1,6 @@
 # MistV2简明使用教程
 
-本教程面向MistV2的非开发者用户，包括画手和其他使用MistV2对图片添加水印的个人。开发者用户请访问我们的项目代码仓库并按照代码仓库README文件提供的教程运行。
+本教程面向MistV2的非开发者用户，包括画手和其他使用MistV2对图片添加水印的个人。开发者用户请访问我们的项目代码仓库并按照代码仓库README文件提供的教程运行。本教程所使用的示例图片均已经过原画师授权。
 
 ## 目录
 
@@ -31,7 +31,7 @@
 
 ![img/P4.png](source/media/installation/P4.png)
 
-步骤二：安装`Mist_GUI`运行所需的动态库
+**步骤二**：安装`Mist_GUI`运行所需的动态库
 
 在整合包中已经包含了`Mist_GUI`运行所需的动态库，在`runtime`文件夹内：
 
@@ -41,7 +41,7 @@
 
 ![img/P6.png](source/media/installation/P6.png)
 
-步骤三：运行`Mist_GUI.exe`
+**步骤三**：运行`Mist_GUI.exe`
 
 双击项目里的`Mist_GUI.exe`：
 
@@ -51,7 +51,7 @@
 
 ![img/P8.png](source/media/installation/P8.png)
 
-步骤四：安装3.10.11版本的python
+**步骤四**：安装3.10.11版本的python
 
 先去卸载电脑里原有的python（如果有的话），然后点击`Install Python 3.10.11`按钮，会自动弹出python的安装页面，记得勾选`Add Python 3.10 to PATH`，之后点击`Install Now`安装即可：
 
@@ -59,19 +59,19 @@
 
 安装之后记得重启电脑，使得环境变量配置生效。
 
-步骤五：安装Git
+**步骤五**：安装Git
 
 点击`Install Git`按钮安装Git即可，Git的安装均按照默认配置。
 
 ![img/P10.png](source/media/installation/P10.png)
 
-步骤六：如果是中国用户，则可以选择对pip换源，使得下载依赖包的速度更快
+**步骤六**：如果是中国用户，则可以选择对pip换源，使得下载依赖包的速度更快
 
 如果要选择换源，点击`Change Source`按钮即可，如果要换回默认的源，点击`Reset Source`按钮即可。
 
 ![img/P11.png](source/media/installation/P11.png)
 
-步骤七：准备Pytorch的环境配置
+**步骤七**：准备Pytorch的环境配置
 
 点击`Prepare Environment`按钮，即可进行Pytorch的环境配置。
 
@@ -85,49 +85,14 @@
 
 如果要清除已经配置好的环境，点击`Clear Environment`按钮即可。
 
-步骤八：运行Mist_Webui
+**步骤八**：下载水印的靶点模型
 
-完成环境配置之后，点击`Run Mist`即可运行Mist_Webui。
-
-![img/P14.png](source/media/installation/P14.png)
-
-之后使用任意一个浏览器，在地址栏输入`http://127.0.0.1:7860`即可使用Mist_Webui。
-
-![img/P15.png](source/media/installation/P15.png)
-
-步骤九：准备要打上水印的图片，并使用Webui配置和运行Mist
-
-要打上水印的图片默认放在`src/data/training`文件夹，直接把要打上水印的图片放置在该文件夹即可。（示例图已经过原画师授权）
-
-![img/P16.png](source/media/installation/P16.png)
-
-然后按照以下的参数填写：
-
-| 参数 | 值 |
-| :-: | :-: |
-| Data Path | data/training |
-| Output Path | output |
-| Target Model Path | stable-diffusion/stable-diffusion-1-5 |
-| Prompt | （按照个人喜好填写即可，这里的例子为masterpiece, best quality） |
-
-![img/P17.png](source/media/installation/P17.png)
-
-Strength则代表水印强度和处理步数，数值越高，对ai生成模型的防御功能越强，但对原图像的影响也越大，画师可以根据实际需求进行调整。
-
-对于Device这一项，如果你的电脑是N卡且显存大于等于6GB，则可以使用`gpu`这一项，大大加快处理水印的速度（以RTX 3060为例，Steps=5时，大约1小时5张图），否则使用`cpu`这一项，对显存没有限制但是处理水印的速度相应慢很多（Steps=5时，大约1.5小时处理1张图）。
-
-对于Precision这一项，可以先保持默认选项`bfloat16`，鉴于部分用户的显卡不支持`bfloat16`运算，如果出现报错了切换到`float16`选项即可。
-
-之后点击Webui内的`Mist`这个按钮即可，出现以下信息说明处理成功：
-
-![img/P18.png](source/media/installation/P18.png)
-
-被打上水印的图片放在`src/output`这个文件夹：
-
-![img/P19.png](source/media/installation/P19.png)
+【待补充】
 
 
 ## 使用
+
+### 界面
 
 Mist WebUI的使用界面如下图所示：
 
@@ -135,6 +100,11 @@ Mist WebUI的使用界面如下图所示：
 **（重要）如何选择一次运行Mist添加水印的图片**：选择画风、内容具有一致性的5-10张图片一同添加水印为宜，一次添加水印的总图片数切忌超过15张。
 
 **（重要）MistV2 GPU版本运行要求**：30系及之后发布的Nvidia显卡，显存6G以上
+
+**（重要）MistV2 GPU版本运行时间**：默认参数处理5张图时间约为15分钟；运行时间大致和图片数量成正比
+
+
+### 参数
 
 WebUI含有两部分参数：常用参数和专业参数。前者为使用MistV2必须填写的参数，后者则对控制MistV2性能的起不同的作用。下面分表介绍两组参数。
 
@@ -168,7 +138,39 @@ WebUI含有两部分参数：常用参数和专业参数。前者为使用MistV2
 | LoRA Ranks                                                   | 靶点LoRA阶数                                                                                     | 非研究用途保持默认值即可；也可尝试调到LoRA训练最常用的值 |
 
 
+### 使用实例
 
+
+完成环境配置之后，在启动器中点击`Run Mist`即可运行Mist Webui。
+
+![img/P14.png](source/media/installation/P14.png)
+
+查看Mist WebUI的方式是：使用任意一个浏览器，在地址栏输入`http://127.0.0.1:7860`即可。
+
+![img/P15.png](source/media/installation/P15.png)
+
+
+将要等待打水印的图片放在`src/data/training`文件夹。
+
+![img/P16.png](source/media/installation/P16.png)
+
+然后按照以下的参数填写：
+
+| 参数 | 值 |
+| :-: | :-: |
+| Data Path | data/training |
+| Output Path | output |
+| Target Model Path | stable-diffusion/stable-diffusion-1-5 |
+| Prompt | （按照个人喜好填写即可，这里的例子为masterpiece, best quality） |
+
+
+填写完毕后，点击Webui内的`Mist`这个按钮开始运行。出现类似以下内容说明已经成功处于运行中。
+
+![img/P18.png](source/media/installation/P18.png)
+
+在运行结束后，被打上水印的图片将放在`src/output`这个文件夹：
+
+![img/P19.png](source/media/installation/P19.png)
 
 
 
