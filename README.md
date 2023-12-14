@@ -22,23 +22,23 @@
 
 安装完百度网盘客户端后，点击上面的百度网盘链接，进入以下界面：
 
-![img/P1.png](source/media/installation/P1.png){width=75% height=auto}
+![img/P1.png](source/media/installation/P1.png)
 
 之后单击`Mist_v2`文件夹，之后点击“下载”按钮：
 
-![img/P2.png](source/media/installation/P2.png){width=75% height=auto}
+![img/P2.png](source/media/installation/P2.png)
 
 之后在弹出的客户端界面，指定下载路径之后，点击“下载”即可：
 
-![img/P3.png](source/media/installation/P3.png){width=75% height=auto}
+![img/P3.png](source/media/installation/P3.png)
 
-![img/P4.png](source/media/installation/P4.png){width=75% height=auto}
+![img/P4.png](source/media/installation/P4.png)
 
 等待下载完成之后，在下载路径就会出现`Mist_v2`文件夹：
 
-![img/P5.png](source/media/installation/P5.png){width=75% height=auto}
+![img/P5.png](source/media/installation/P5.png)
 
-![img/P6.png](source/media/installation/P6.png){width=75% height=auto}
+![img/P6.png](source/media/installation/P6.png)
 
 `Mist_v2`的文件结构如下：
 
@@ -47,17 +47,17 @@
 
 `diffusers`文件夹里的内容（将会被用于**步骤九**）：
 
-![img/P7.png](source/media/installation/P7.png){width=75% height=auto}
+![img/P7.png](source/media/installation/P7.png)
 
 `Mist_GUI`文件夹里的内容：
 
-![img/P8.png](source/media/installation/P8.png){width=75% height=auto}
+![img/P8.png](source/media/installation/P8.png)
 
 之后，在`Mist_GUI`文件夹里面任选`Mist_GUI.rar`或`Mist_GUI.zip`其中一个压缩包进行解压缩即可，然后你可以把这个启动器放在任何一个你喜欢的位置（尽量放在除C盘以外的路径），这里使用的路径为`E:\Mist_GUI`：
 
-![img/P9.png](source/media/installation/P9.png){width=75% height=auto}
+![img/P9.png](source/media/installation/P9.png)
 
-![img/P9.png](source/media/installation/P10.png){width=75% height=auto}
+![img/P9.png](source/media/installation/P10.png)
 
 其中的`Mist_GUI.exe`就是Mist启动器，单击即可运行。
 
@@ -65,7 +65,7 @@
 
 点击上面的谷歌网盘链接，进入以下界面：
 
-![img/P11.png](source/media/installation/P11.png){width=75% height=auto}
+![img/P11.png](source/media/installation/P11.png)
 
 将其中的所有文件全部下载即可，使用方法和百度网盘下载的版本同理。
 
@@ -73,25 +73,25 @@
 
 点击开始菜单，并在搜索栏搜索并单击“编辑系统环境变量”
 
-![img/P12.png](source/media/installation/P12.png){width=75% height=auto}
+![img/P12.png](source/media/installation/P12.png)
 
 单击后出现以下界面，然后点击“环境变量”：
 
-![img/P13.png](source/media/installation/P13.png){width=50% height=auto}
+![img/P13.png](source/media/installation/P13.png)
 
 进入到这个界面，然后双击上方界面的"Path"这一栏：
 
-![img/P14.png](source/media/installation/P14.png){width=75% height=auto}
+![img/P14.png](source/media/installation/P14.png)
 
-![img/P15.png](source/media/installation/P15.png){width=75% height=auto}
+![img/P15.png](source/media/installation/P15.png)
 
 然后如果列表中含有以`Microsoft\WindowsApps`结尾的这一项，先单击选中这一项，然后点击“删除”按钮进行删除：
 
-![img/P16.png](source/media/installation/P16.png){width=75% height=auto}
+![img/P16.png](source/media/installation/P16.png)
 
 之后点击“确定”按钮使得修改生效：
 
-![img/P17.png](source/media/installation/P17.png){width=75% height=auto}
+![img/P17.png](source/media/installation/P17.png)
 
 **必要时可以重启电脑使得环境配置生效。**
 
@@ -103,31 +103,31 @@
 
 在整合包中已经包含了启动器运行所需的动态库，在`runtime`文件夹内：
 
-![img/P18.png](source/media/installation/P18.png){width=50% height=auto}
+![img/P18.png](source/media/installation/P18.png)
 
 双击`windowsdesktop-runtime-7.0.13-win-x64.exe`进行安装即可：
 
-![img/P19.png](source/media/installation/P19.png){width=75% height=auto}
+![img/P19.png](source/media/installation/P19.png)
 
-![img/P20.png](source/media/installation/P20.png){width=75% height=auto}
+![img/P20.png](source/media/installation/P20.png)
 
 出现以下信息说明安装成功：
 
-![img/P21.png](source/media/installation/P21.png){width=75% height=auto}
+![img/P21.png](source/media/installation/P21.png)
 
 另外地，也可以通过点击以下链接下载所需的动态库：[https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/runtime-desktop-7.0.13-windows-x64-installer](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/runtime-desktop-7.0.13-windows-x64-installer)
 
-![img/P22.png](source/media/installation/P22.png){width=75% height=auto}
+![img/P22.png](source/media/installation/P22.png)
 
 **步骤四**：运行启动器
 
 双击项目里的`Mist_GUI.exe`：
 
-![img/P23.png](source/media/installation/P23.png){width=75% height=auto}
+![img/P23.png](source/media/installation/P23.png)
 
 然后会弹出以下界面：
 
-![img/P24.png](source/media/installation/P24.png){width=75% height=auto}
+![img/P24.png](source/media/installation/P24.png)
 
 如果没有正常弹出界面，请检查**步骤三**有没有出现问题。
 
@@ -137,37 +137,37 @@
 
 点击开始菜单，并在搜索栏搜索并单击“添加或删除应用程序”：
 
-![img/P25.png](source/media/installation/P25.png){width=75% height=auto}
+![img/P25.png](source/media/installation/P25.png)
 
 然后在“应用列表”里面搜索“python”：
 
-![img/P26.png](source/media/installation/P26.png){width=75% height=auto}
+![img/P26.png](source/media/installation/P26.png)
 
 之后点击右面的三个点，然后点击“卸载”：
 
-![img/P27.png](source/media/installation/P27.png){width=75% height=auto}
+![img/P27.png](source/media/installation/P27.png)
 
 然后会卸载当前电脑上已经安装的python：
 
-![img/P28.png](source/media/installation/P28.png){width=75% height=auto}
+![img/P28.png](source/media/installation/P28.png)
 
 出现以下信息说明卸载成功，点击“Close”按钮退出即可：
 
-![img/P29.png](source/media/installation/P29.png){width=75% height=auto}
+![img/P29.png](source/media/installation/P29.png)
 
 然后点击启动器的`Install Python 3.10.11`按钮，会自动弹出python的安装页面：
 
-![img/P30.png](source/media/installation/P30.png){width=75% height=auto}
+![img/P30.png](source/media/installation/P30.png)
 
-![img/P31.png](source/media/installation/P31.png){width=75% height=auto}
+![img/P31.png](source/media/installation/P31.png)
 
 记得勾选`Add Python 3.10 to PATH`，之后点击`Install Now`安装即可：
 
-![img/P32.png](source/media/installation/P32.png){width=75% height=auto}
+![img/P32.png](source/media/installation/P32.png)
 
 出现以下信息说明安装成功，点击“Close”按钮关闭即可：
 
-![img/P33.png](source/media/installation/P33.png){width=75% height=auto}
+![img/P33.png](source/media/installation/P33.png)
 
 **安装之后记得重启电脑，使得环境变量配置生效。**
 
@@ -175,27 +175,27 @@
 
 在启动器点击`Install Git`按钮安装Git：
 
-![img/P34.png](source/media/installation/P34.png){width=75% height=auto}
+![img/P34.png](source/media/installation/P34.png)
 
 Git的安装均按照默认配置，一直点击“Next”按钮即可。
 
-![img/P35.png](source/media/installation/P35.png){width=75% height=auto}
+![img/P35.png](source/media/installation/P35.png)
 
-![img/P36.png](source/media/installation/P36.png){width=75% height=auto}
+![img/P36.png](source/media/installation/P36.png)
 
 出现以下信息说明Git安装成功，点击“Finish”按钮即可：
 
-![img/P37.png](source/media/installation/P37.png){width=75% height=auto}
+![img/P37.png](source/media/installation/P37.png)
 
 **步骤七**：如果是中国用户，则可以选择对pip切换安装源，使得下载依赖包的速度更快
 
 如果要选择切换安装源，点击`Change Source`按钮即可：
 
-![img/P38.png](source/media/installation/P38.png){width=50% height=auto}
+![img/P38.png](source/media/installation/P38.png)
 
 如果要换回默认的源，点击`Reset Source`按钮即可：
 
-![img/P39.png](source/media/installation/P39.png){width=50% height=auto}
+![img/P39.png](source/media/installation/P39.png)
 
 **步骤八**：准备启动器的环境配置
 
@@ -203,45 +203,45 @@ Git的安装均按照默认配置，一直点击“Next”按钮即可。
 
 点击`Prepare Environment`按钮，即可进行启动器的环境配置。
 
-![img/P40.png](source/media/installation/P40.png){width=75% height=auto}
+![img/P40.png](source/media/installation/P40.png)
 
 然后会弹出如下所示的命令行，表明进行启动器环境的安装：
 
-![img/P41.png](source/media/installation/P41.png){width=75% height=auto}
+![img/P41.png](source/media/installation/P41.png)
 
 环境配置需要等待一段时间，待命令行自动关闭之后，环境配置完成。
 
 如果要进行环境测试，点击`Test Environment`按钮即可。
 
-![img/P42.png](source/media/installation/P42.png){width=50% height=auto}
+![img/P42.png](source/media/installation/P42.png)
 
 如果出现`Cuda is available: True`的情况，说明该机器是Nvidia系列显卡，并且可以使用gpu模式运行。
 
-![img/P43.png](source/media/installation/P43.png){width=75% height=auto}
+![img/P43.png](source/media/installation/P43.png)
 
 如果出现`Cuda is available: False`的情况，说明该机器不可使用gpu模式运行，只能使用cpu模式运行。
 
 如果点击`Test Environment`按钮时出现如下所示的错误信息：
 
-![img/P44.png](source/media/installation/P44.png){width=75% height=auto}
+![img/P44.png](source/media/installation/P44.png)
 
 说明环境配置过程中出现了问题（例如命令行窗口中途突然关闭，突然断网，C盘剩余空间不够等等），建议点击`Clear Environment`按钮清除已经配好的环境，然后再点击`Prepare Environment`按钮进行配置即可。
 
-![img/P45.png](source/media/installation/P45.png){width=50% height=auto}
+![img/P45.png](source/media/installation/P45.png)
 
 **步骤九**：放置水印的靶点模型
 
 进入到项目的`mist-v2`文件夹：
 
-![img/P46.png](source/media/installation/P46.png){width=75% height=auto}
+![img/P46.png](source/media/installation/P46.png)
 
 然后再进入`src`文件夹：
 
-![img/P47.png](source/media/installation/P47.png){width=75% height=auto}
+![img/P47.png](source/media/installation/P47.png)
 
 之后我们关注其中的三个文件夹：
 
-![img/P48.png](source/media/installation/P48.png){width=75% height=auto}
+![img/P48.png](source/media/installation/P48.png)
 
 这三个文件夹的作用分别为：
 
@@ -251,21 +251,21 @@ Git的安装均按照默认配置，一直点击“Next”按钮即可。
 
 先进入到`data`文件夹：
 
-![img/P49.png](source/media/installation/P49.png){width=50% height=auto}
+![img/P49.png](source/media/installation/P49.png)
 
 为了便于后续的使用，在`data`文件夹下面新建两个文件夹`contrast`和`img`：
 
-![img/P50.png](source/media/installation/P50.png){width=50% height=auto}
+![img/P50.png](source/media/installation/P50.png)
 
 然后进入到`stable-diffusion`文件夹：
 
-![img/P51.png](source/media/installation/P51.png){width=75% height=auto}
+![img/P51.png](source/media/installation/P51.png)
 
 将**步骤一**中`diffusers`文件夹下的`stable-diffusion-1-5`复制到启动器的`stable-diffusion`文件夹中：
 
-![img/P52.png](source/media/installation/P52.png){width=75% height=auto}
+![img/P52.png](source/media/installation/P52.png)
 
-![img/P53.png](source/media/installation/P53.png){width=75% height=auto}
+![img/P53.png](source/media/installation/P53.png)
 
 这样放置水印的靶点模型步骤已经完成。
 
@@ -274,6 +274,10 @@ Git的安装均按照默认配置，一直点击“Next”按钮即可。
 ### 界面
 
 Mist WebUI的使用界面如下图所示：
+
+![img/P54.png](source/media/installation/P54.png)
+
+![img/P55.png](source/media/installation/P55.png)
 
 **（重要）如何选择一次运行Mist添加水印的图片**：选择画风、内容具有一致性的5-10张图片一同添加水印为宜，一次添加水印的总图片数切忌超过15张。
 
@@ -317,25 +321,25 @@ WebUI含有两部分参数：常用参数和专业参数。前者为使用MistV2
 
 完成环境配置之后，在启动器中点击`Run Mist`即可运行Mist Webui。
 
-![img/P54.png](source/media/installation/P54.png){width=50% height=auto}
+![img/P56.png](source/media/installation/P56.png)
 
-![img/P55.png](source/media/installation/P55.png){width=75% height=auto}
+![img/P57.png](source/media/installation/P57.png)
 
 查看Mist WebUI的方式是：使用任意一个浏览器，在地址栏输入`http://127.0.0.1:7860`即可。
 
-![img/P56.png](source/media/installation/P56.png){width=75% height=auto}
+![img/P58.png](source/media/installation/P58.png)
 
 将要等待打水印的图片放在`mist-v2/src/data/img`文件夹：（示例图已经过原画师授权）
 
-![img/P57.png](source/media/installation/P57.png){width=50% height=auto}
+![img/P59.png](source/media/installation/P59.png)
 
-![img/P58.png](source/media/installation/P58.png){width=50% height=auto}
+![img/P60.png](source/media/installation/P60.png)
 
-![img/P59.png](source/media/installation/P59.png){width=50% height=auto}
+![img/P61.png](source/media/installation/P61.png)
 
-![img/P60.png](source/media/installation/P60.png){width=50% height=auto}
+![img/P62.png](source/media/installation/P60.png)
 
-![img/P61.png](source/media/installation/P61.png){width=50% height=auto}
+![img/P63.png](source/media/installation/P63.png)
 
 然后在Webui中按照以下的参数填写：
 
@@ -347,25 +351,25 @@ WebUI含有两部分参数：常用参数和专业参数。前者为使用MistV2
 | Path to place contrast images | data/contrast |
 | Prompt | （按照个人喜好或实际情况填写即可，这里的例子为masterpiece, best quality） |
 
-![img/P62.png](source/media/installation/P62.png){width=75% height=auto}
+![img/P64.png](source/media/installation/P64.png)
 
 填写完毕后，点击Webui内的`Mist`这个按钮开始运行：
 
-![img/P63.png](source/media/installation/P63.png){width=75% height=auto}
+![img/P65.png](source/media/installation/P65.png)
 
 命令行内出现类似以下内容说明已经成功处于运行中：
 
-![img/P64.png](source/media/installation/P64.png){width=75% height=auto}
+![img/P66.png](source/media/installation/P66.png)
 
 在运行结束后，被打上水印的图片将被放在`output`文件夹：
 
-![img/P65.png](source/media/installation/P65.png){width=50% height=auto}
+![img/P67.png](source/media/installation/P67.png)
 
-![img/P66.png](source/media/installation/P66.png){width=75% height=auto}
+![img/P68.png](source/media/installation/P68.png)
 
 可以点击图片查看效果：
 
-![img/P67.png](source/media/installation/P67.png){width=75% height=auto}
+![img/P69.png](source/media/installation/P69.png)
 
 ## 常见问题
 
@@ -388,6 +392,6 @@ A: 这个是由于C盘剩余空间太小导致的，给C盘清理出足够多（
 
 Q: 如果点击完`Install Python 3.10.11`按钮再点击`Prepare Environment`按钮出现`Couldn't launch python`错误怎么办？
 
-![img/P68.png](source/media/installation/P68.png){width=75% height=auto}
+![img/P70.png](source/media/installation/P70.png)
 
 A: 这是安装完python之后环境变量没有更新导致的，重启电脑再运行启动器即可。
