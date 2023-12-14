@@ -14,87 +14,136 @@
 
 **步骤一**：从百度网盘或谷歌网盘安装Mist_v2
 
+百度网盘：[https://pan.baidu.com/s/1fZP4nFxlmmr0DiE54DJ7HQ](https://pan.baidu.com/s/1fZP4nFxlmmr0DiE54DJ7HQ)（提取码：m4nx）
 
+谷歌网盘：[https://drive.google.com/drive/folders/1vg8oK2BUOla5adaJcFYx5QMq0-MoP8kk](https://drive.google.com/drive/folders/1vg8oK2BUOla5adaJcFYx5QMq0-MoP8kk)
 
-**步骤二**：清除计算机中关于Microsoft应用商店的环境变量
+从百度网盘下载：
+
+安装完百度网盘客户端后，点击上面的百度网盘链接，进入以下界面：
+
+![img/P1.png](source/media/installation/P1.png){width=75% height=auto}
+
+之后单击`Mist_v2`文件夹，之后点击“下载”按钮：
+
+![img/P2.png](source/media/installation/P2.png){width=75% height=auto}
+
+之后在弹出的客户端界面，指定下载路径之后，点击“下载”即可：
+
+![img/P3.png](source/media/installation/P3.png){width=75% height=auto}
+
+![img/P4.png](source/media/installation/P4.png){width=75% height=auto}
+
+等待下载完成之后，在下载路径就会出现`Mist_v2`文件夹：
+
+`Mist_v2`的文件结构如下：
+
+- diffusers：水印的靶点模型（为开源版本的Stable Diffusion v1.5）
+- Mist_GUI：Mist启动器对应的压缩包
+
+从谷歌网盘下载：
+
+点击上面的谷歌网盘链接，进入以下界面：
+
+![img/P7.png](source/media/installation/P7.png){width=75% height=auto}
+
+将其中的所有文件全部下载即可，使用方法和百度网盘下载的版本同理。
+
+**步骤二**：由于某些电脑运行`python`后会跳转到Microsoft应用商店，因此需要事先清除计算机中关于Microsoft应用商店的环境变量
 
 点击开始菜单，并在搜索栏搜索并单击“编辑系统环境变量”
 
-![img/P1.png](source/media/installation/P1.png){}
+[img/P1.png](source/media/installation/P1.png){width=50% height=auto}
 
 单击后出现以下界面，然后点击“环境变量”：
 
-![img/P2.png](source/media/installation/P2.png)
+[img/P2.png](source/media/installation/P2.png){width=50% height=auto}
 
 进入到这个界面，然后双击上方界面的"Path"这一栏：
 
-![img/P3.png](source/media/installation/P3.png)
+[img/P3.png](source/media/installation/P3.png){width=50% height=auto}
 
-然后如果列表中含有`C:\Users\xxx(你的用户名)\AppData\Local\Microsoft\WindowsApps`这一项，直接删除即可。
+然后如果列表中含有以`Microsoft\WindowsApps`结尾的这一项，先单击选中这一项，然后点击“删除”按钮进行删除：
 
-![img/P4.png](source/media/installation/P4.png)
+[img/P4.png](source/media/installation/P4.png){width=50% height=auto}
+
+**必要时可以重启电脑使得环境配置生效。**
+
+（或者可以参考该解决方案链接：[https://blog.csdn.net/qq_42365887/article/details/132486389](https://blog.csdn.net/qq_42365887/article/details/132486389)）
 
 **步骤三**：安装启动器运行所需的动态库
 
-该程序采用`.NET 7.0`编写，因此需要下载和`.NET 7.0`相关的
+该程序采用`.NET 7.0`编写，因此需要下载和`.NET 7.0`相关的动态库
 
 在整合包中已经包含了`Mist_GUI`运行所需的动态库，在`runtime`文件夹内：
 
-![img/P5.png](source/media/installation/P5.png)
+[img/P5.png](source/media/installation/P5.png)
 
 点击`windowsdesktop-runtime-7.0.13-win-x64.exe`进行安装即可。
 
-![img/P6.png](source/media/installation/P6.png)
+[img/P6.png](source/media/installation/P6.png)
 
-另外地，可以采用
+另外地，可以点击以下链接进行下载：
 
-**步骤四**：运行`Mist_GUI.exe`
+**步骤四**：运行启动器
 
 双击项目里的`Mist_GUI.exe`：
 
-![img/P7.png](source/media/installation/P7.png)
+[img/P7.png](source/media/installation/P7.png)
 
 然后会弹出以下界面：
 
-![img/P8.png](source/media/installation/P8.png)
+[img/P8.png](source/media/installation/P8.png)
 
-**步骤五**：安装3.10.11版本的python
+**步骤五**：通过启动器安装3.10.11版本的python
 
 先去卸载电脑里原有的python（如果有的话）：
 
 然后点击`Install Python 3.10.11`按钮，会自动弹出python的安装页面，记得勾选`Add Python 3.10 to PATH`，之后点击`Install Now`安装即可：
 
-![img/P9.png](source/media/installation/P9.png)
+[img/P9.png](source/media/installation/P9.png)
 
-安装之后记得重启电脑，使得环境变量配置生效。
+**安装之后记得重启电脑，使得环境变量配置生效。**
 
-**步骤六**：安装Git
+**步骤六**：通过启动器安装Git
 
-点击`Install Git`按钮安装Git即可，Git的安装均按照默认配置。
+点击`Install Git`按钮安装Git即可，Git的安装均按照默认配置，既一直点击“Next”按钮即可。
 
-![img/P10.png](source/media/installation/P10.png)
+[img/P10.png](source/media/installation/P10.png)
 
-**步骤七**：如果是中国用户，则可以选择对pip换源，使得下载依赖包的速度更快
+**步骤七**：如果是中国用户，则可以选择对pip切换安装源，使得下载依赖包的速度更快
 
-如果要选择换源，点击`Change Source`按钮即可，如果要换回默认的源，点击`Reset Source`按钮即可。
+如果要选择切换安装源，点击`Change Source`按钮即可：
 
-![img/P11.png](source/media/installation/P11.png)
+[img/P11.png](source/media/installation/P11.png)
 
-**步骤八**：准备Pytorch的环境配置
+如果要换回默认的源，点击`Reset Source`按钮即可：
 
-点击`Prepare Environment`按钮，即可进行Pytorch的环境配置。
+**步骤八**：准备启动器的环境配置
 
-![img/P12.png](source/media/installation/P12.png)
+**（注：运行这一步之前确保先给C盘清理出足够多（大约5GB以上）的空间，目的是给要下载的依赖包腾出空间。**
+
+点击`Prepare Environment`按钮，即可进行启动器的环境配置。
+
+[img/P12.png](source/media/installation/P12.png)
+
+环境配置需要等待一段
 
 如果要进行环境测试，点击`Test Environment`按钮即可。
 
-如果出现`Cuda is available: True`的情况，说明该机器是N卡，并且可以使用Cuda进行推理加速。
+如果出现`Cuda is available: True`的情况，说明该机器是NVIDIA系列显卡，并且可以使用gpu模式运行。
 
-![img/P13.png](source/media/installation/P13.png)
+[img/P13.png](source/media/installation/P13.png)
+
+如果出现`Cuda is available: False`的情况，说明该机器不可使用gpu模式运行，只能使用cpu模式运行。
+
+如果运行时出现如下所示的错误信息：
+
+说明环境配置过程中出现了问题（例如命令行窗口中途突然关闭，）
 
 如果要清除已经配置好的环境，点击`Clear Environment`按钮即可。
 
-**步骤九**：放置要打上水印的图片以及水印的靶点模型
+**步骤九**：放置水印的靶点模型
 
 【待补充】
 
@@ -147,15 +196,15 @@ WebUI含有两部分参数：常用参数和专业参数。前者为使用MistV2
 
 完成环境配置之后，在启动器中点击`Run Mist`即可运行Mist Webui。
 
-![img/P14.png](source/media/installation/P14.png)
+[img/P14.png](source/media/installation/P14.png)
 
 查看Mist WebUI的方式是：使用任意一个浏览器，在地址栏输入`http://127.0.0.1:7860`即可。
 
-![img/P15.png](source/media/installation/P15.png)
+[img/P15.png](source/media/installation/P15.png)
 
 将要等待打水印的图片放在`src/data/training`文件夹。
 
-![img/P16.png](source/media/installation/P16.png)
+[img/P16.png](source/media/installation/P16.png)
 
 然后按照以下的参数填写：
 
@@ -169,17 +218,23 @@ WebUI含有两部分参数：常用参数和专业参数。前者为使用MistV2
 
 填写完毕后，点击Webui内的`Mist`这个按钮开始运行。出现类似以下内容说明已经成功处于运行中。
 
-![img/P18.png](source/media/installation/P18.png)
+[img/P18.png](source/media/installation/P18.png)
 
-在运行结束后，被打上水印的图片将放在`src/output`这个文件夹：
+在运行结束后，被打上水印的图片将放在`output`文件夹：
 
-![img/P19.png](source/media/installation/P19.png)
+![img/P51.png](source/media/installation/P51.png){width=50% height=auto}
+
+![img/P52.png](source/media/installation/P52.png){width=75% height=auto}
+
+可以点击图片查看效果：
+
+![img/P53.png](source/media/installation/P53.png){width=50% height=auto}
 
 ## 常见问题
 
-Q: 点击相关按钮运行不了，并遇到打开Microsoft应用商店的情况怎么办？
+Q: 点击`Prepare Environment`按钮运行不了，并遇到打开Microsoft应用商店的情况怎么办？
 
-A: 解决方法参见步骤1。
+A: 解决方法参见步骤二。（或者可以参考该解决方案链接：[https://blog.csdn.net/qq_42365887/article/details/132486389](https://blog.csdn.net/qq_42365887/article/details/132486389)）
 
 Q: 程序运行时出现以下报错信息，是否会影响使用？
 
