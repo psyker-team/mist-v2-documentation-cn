@@ -36,16 +36,36 @@
 
 等待下载完成之后，在下载路径就会出现`Mist_v2`文件夹：
 
+![img/P5.png](source/media/installation/P5.png){width=75% height=auto}
+
+![img/P6.png](source/media/installation/P6.png){width=75% height=auto}
+
 `Mist_v2`的文件结构如下：
 
 - diffusers：水印的靶点模型（为开源版本的Stable Diffusion v1.5）
 - Mist_GUI：Mist启动器对应的压缩包
 
+`diffusers`文件夹里的内容（将会被用于**步骤九**）：
+
+![img/P7.png](source/media/installation/P7.png){width=75% height=auto}
+
+`Mist_GUI`文件夹里的内容：
+
+![img/P8.png](source/media/installation/P8.png){width=75% height=auto}
+
+之后，在`Mist_GUI`文件夹里面任选`Mist_GUI.rar`或`Mist_GUI.zip`其中一个压缩包进行解压缩即可，然后你可以把这个启动器放在任何一个你喜欢的位置（尽量放在除C盘以外的路径），这里使用的路径为`E:\Mist_GUI`：
+
+![img/P9.png](source/media/installation/P9.png){width=75% height=auto}
+
+![img/P9.png](source/media/installation/P10.png){width=75% height=auto}
+
+其中的`Mist_GUI.exe`就是Mist启动器，单击即可运行。
+
 从谷歌网盘下载：
 
 点击上面的谷歌网盘链接，进入以下界面：
 
-![img/P7.png](source/media/installation/P7.png){width=75% height=auto}
+![img/P11.png](source/media/installation/P11.png){width=75% height=auto}
 
 将其中的所有文件全部下载即可，使用方法和百度网盘下载的版本同理。
 
@@ -53,19 +73,25 @@
 
 点击开始菜单，并在搜索栏搜索并单击“编辑系统环境变量”
 
-[img/P1.png](source/media/installation/P1.png){width=50% height=auto}
+![img/P12.png](source/media/installation/P12.png){width=75% height=auto}
 
 单击后出现以下界面，然后点击“环境变量”：
 
-[img/P2.png](source/media/installation/P2.png){width=50% height=auto}
+![img/P13.png](source/media/installation/P13.png){width=50% height=auto}
 
 进入到这个界面，然后双击上方界面的"Path"这一栏：
 
-[img/P3.png](source/media/installation/P3.png){width=50% height=auto}
+![img/P14.png](source/media/installation/P14.png){width=75% height=auto}
+
+![img/P15.png](source/media/installation/P15.png){width=75% height=auto}
 
 然后如果列表中含有以`Microsoft\WindowsApps`结尾的这一项，先单击选中这一项，然后点击“删除”按钮进行删除：
 
-[img/P4.png](source/media/installation/P4.png){width=50% height=auto}
+![img/P16.png](source/media/installation/P16.png){width=75% height=auto}
+
+之后点击“确定”按钮使得修改生效：
+
+![img/P17.png](source/media/installation/P17.png){width=75% height=auto}
 
 **必要时可以重启电脑使得环境配置生效。**
 
@@ -73,35 +99,75 @@
 
 **步骤三**：安装启动器运行所需的动态库
 
-该程序采用`.NET 7.0`编写，因此需要下载和`.NET 7.0`相关的动态库
+该程序采用`.NET 7.0`编写，因此需要下载和`.NET 7.0`相关的动态库.
 
-在整合包中已经包含了`Mist_GUI`运行所需的动态库，在`runtime`文件夹内：
+在整合包中已经包含了启动器运行所需的动态库，在`runtime`文件夹内：
 
-[img/P5.png](source/media/installation/P5.png)
+![img/P18.png](source/media/installation/P18.png){width=50% height=auto}
 
-点击`windowsdesktop-runtime-7.0.13-win-x64.exe`进行安装即可。
+双击`windowsdesktop-runtime-7.0.13-win-x64.exe`进行安装即可：
 
-[img/P6.png](source/media/installation/P6.png)
+![img/P19.png](source/media/installation/P19.png){width=75% height=auto}
 
-另外地，可以点击以下链接进行下载：
+![img/P20.png](source/media/installation/P20.png){width=75% height=auto}
+
+出现以下信息说明安装成功：
+
+![img/P21.png](source/media/installation/P21.png){width=75% height=auto}
+
+另外地，也可以通过点击以下链接下载所需的动态库：[https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/runtime-desktop-7.0.13-windows-x64-installer](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/runtime-desktop-7.0.13-windows-x64-installer)
+
+![img/P22.png](source/media/installation/P22.png){width=75% height=auto}
 
 **步骤四**：运行启动器
 
 双击项目里的`Mist_GUI.exe`：
 
-[img/P7.png](source/media/installation/P7.png)
+![img/P23.png](source/media/installation/P23.png){width=75% height=auto}
 
 然后会弹出以下界面：
 
-[img/P8.png](source/media/installation/P8.png)
+![img/P24.png](source/media/installation/P24.png){width=75% height=auto}
+
+如果没有正常弹出界面，请检查**步骤三**有没有出现问题。
 
 **步骤五**：通过启动器安装3.10.11版本的python
 
 先去卸载电脑里原有的python（如果有的话）：
 
-然后点击`Install Python 3.10.11`按钮，会自动弹出python的安装页面，记得勾选`Add Python 3.10 to PATH`，之后点击`Install Now`安装即可：
+点击开始菜单，并在搜索栏搜索并单击“添加或删除应用程序”：
 
-[img/P9.png](source/media/installation/P9.png)
+![img/P25.png](source/media/installation/P25.png){width=75% height=auto}
+
+然后在“应用列表”里面搜索“python”：
+
+![img/P26.png](source/media/installation/P26.png){width=75% height=auto}
+
+之后点击右面的三个点，然后点击“卸载”：
+
+![img/P27.png](source/media/installation/P27.png){width=75% height=auto}
+
+然后会卸载当前电脑上已经安装的python：
+
+![img/P28.png](source/media/installation/P28.png){width=75% height=auto}
+
+出现以下信息说明卸载成功，点击“Close”按钮退出即可：
+
+![img/P29.png](source/media/installation/P29.png){width=75% height=auto}
+
+然后点击启动器的`Install Python 3.10.11`按钮，会自动弹出python的安装页面：
+
+![img/P30.png](source/media/installation/P30.png){width=75% height=auto}
+
+![img/P31.png](source/media/installation/P31.png){width=75% height=auto}
+
+记得勾选`Add Python 3.10 to PATH`，之后点击`Install Now`安装即可：
+
+![img/P32.png](source/media/installation/P32.png){width=75% height=auto}
+
+出现以下信息说明安装成功，点击“Close”按钮关闭即可：
+
+![img/P33.png](source/media/installation/P33.png){width=75% height=auto}
 
 **安装之后记得重启电脑，使得环境变量配置生效。**
 
