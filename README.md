@@ -10,14 +10,17 @@
 
 [常见问题](##常见问题)
 
-
 ## 安装
 
-步骤一：清除计算机中关于Microsoft应用商店的环境变量
+**步骤一**：从百度网盘或谷歌网盘安装Mist_v2
+
+
+
+**步骤二**：清除计算机中关于Microsoft应用商店的环境变量
 
 点击开始菜单，并在搜索栏搜索并单击“编辑系统环境变量”
 
-![img/P1.png](source/media/installation/P1.png)
+![img/P1.png](source/media/installation/P1.png){}
 
 单击后出现以下界面，然后点击“环境变量”：
 
@@ -31,7 +34,9 @@
 
 ![img/P4.png](source/media/installation/P4.png)
 
-**步骤二**：安装`Mist_GUI`运行所需的动态库
+**步骤三**：安装启动器运行所需的动态库
+
+该程序采用`.NET 7.0`编写，因此需要下载和`.NET 7.0`相关的
 
 在整合包中已经包含了`Mist_GUI`运行所需的动态库，在`runtime`文件夹内：
 
@@ -41,7 +46,9 @@
 
 ![img/P6.png](source/media/installation/P6.png)
 
-**步骤三**：运行`Mist_GUI.exe`
+另外地，可以采用
+
+**步骤四**：运行`Mist_GUI.exe`
 
 双击项目里的`Mist_GUI.exe`：
 
@@ -51,27 +58,29 @@
 
 ![img/P8.png](source/media/installation/P8.png)
 
-**步骤四**：安装3.10.11版本的python
+**步骤五**：安装3.10.11版本的python
 
-先去卸载电脑里原有的python（如果有的话），然后点击`Install Python 3.10.11`按钮，会自动弹出python的安装页面，记得勾选`Add Python 3.10 to PATH`，之后点击`Install Now`安装即可：
+先去卸载电脑里原有的python（如果有的话）：
+
+然后点击`Install Python 3.10.11`按钮，会自动弹出python的安装页面，记得勾选`Add Python 3.10 to PATH`，之后点击`Install Now`安装即可：
 
 ![img/P9.png](source/media/installation/P9.png)
 
 安装之后记得重启电脑，使得环境变量配置生效。
 
-**步骤五**：安装Git
+**步骤六**：安装Git
 
 点击`Install Git`按钮安装Git即可，Git的安装均按照默认配置。
 
 ![img/P10.png](source/media/installation/P10.png)
 
-**步骤六**：如果是中国用户，则可以选择对pip换源，使得下载依赖包的速度更快
+**步骤七**：如果是中国用户，则可以选择对pip换源，使得下载依赖包的速度更快
 
 如果要选择换源，点击`Change Source`按钮即可，如果要换回默认的源，点击`Reset Source`按钮即可。
 
 ![img/P11.png](source/media/installation/P11.png)
 
-**步骤七**：准备Pytorch的环境配置
+**步骤八**：准备Pytorch的环境配置
 
 点击`Prepare Environment`按钮，即可进行Pytorch的环境配置。
 
@@ -85,7 +94,7 @@
 
 如果要清除已经配置好的环境，点击`Clear Environment`按钮即可。
 
-**步骤八**：下载水印的靶点模型
+**步骤九**：放置要打上水印的图片以及水印的靶点模型
 
 【待补充】
 
@@ -96,13 +105,11 @@
 
 Mist WebUI的使用界面如下图所示：
 
-
 **（重要）如何选择一次运行Mist添加水印的图片**：选择画风、内容具有一致性的5-10张图片一同添加水印为宜，一次添加水印的总图片数切忌超过15张。
 
 **（重要）MistV2 GPU版本运行要求**：30系及之后发布的Nvidia显卡，显存6G以上
 
 **（重要）MistV2 GPU版本运行时间**：默认参数处理5张图时间约为15分钟；运行时间大致和图片数量成正比
-
 
 ### 参数
 
@@ -122,7 +129,6 @@ WebUI含有两部分参数：常用参数和专业参数。前者为使用MistV2
 | Class Path（对比数据路径） | 存放对比数据的位置                                                          | 使用一个空的文件夹即可                           | Class Path（对比数据路径） |
 | Prompt（提示词）      | 概括待加水印图片的提示词                                                 | 概括图片的风格、内容，用逗号分割不同的短句 | Prompt（提示词）      |
 
-
 **专业参数**：
 
 | 参数名                                                    | 说明                                                                                               | 如何填写                                             |
@@ -137,9 +143,7 @@ WebUI含有两部分参数：常用参数和专业参数。前者为使用MistV2
 | The weight of vae loss（Mode 2影响因子）               | 仅在启动Mode 2后有效，因子越大，防图生图效果越强，相应的其他性能会有一定损失 | 按个人需求调整，不要改变因子的数量级   |
 | LoRA Ranks                                                   | 靶点LoRA阶数                                                                                     | 非研究用途保持默认值即可；也可尝试调到LoRA训练最常用的值 |
 
-
 ### 使用实例
-
 
 完成环境配置之后，在启动器中点击`Run Mist`即可运行Mist Webui。
 
@@ -148,7 +152,6 @@ WebUI含有两部分参数：常用参数和专业参数。前者为使用MistV2
 查看Mist WebUI的方式是：使用任意一个浏览器，在地址栏输入`http://127.0.0.1:7860`即可。
 
 ![img/P15.png](source/media/installation/P15.png)
-
 
 将要等待打水印的图片放在`src/data/training`文件夹。
 
@@ -160,9 +163,9 @@ WebUI含有两部分参数：常用参数和专业参数。前者为使用MistV2
 | :-: | :-: |
 | Data Path | data/training |
 | Output Path | output |
+| | |
 | Target Model Path | stable-diffusion/stable-diffusion-1-5 |
 | Prompt | （按照个人喜好填写即可，这里的例子为masterpiece, best quality） |
-
 
 填写完毕后，点击Webui内的`Mist`这个按钮开始运行。出现类似以下内容说明已经成功处于运行中。
 
@@ -171,8 +174,6 @@ WebUI含有两部分参数：常用参数和专业参数。前者为使用MistV2
 在运行结束后，被打上水印的图片将放在`src/output`这个文件夹：
 
 ![img/P19.png](source/media/installation/P19.png)
-
-
 
 ## 常见问题
 
@@ -191,7 +192,7 @@ A: 这个是由于`xformers`库安装在Windows环境下导致的，直接忽略
 
 Q: 如果配置环境过程中出现`No space left on device`怎么办？
 
-A: 这个是由于C盘剩余空间太小导致的，给C盘清理出足够多的空间（大约5GB以上）即可。
+A: 这个是由于C盘剩余空间太小导致的，给C盘清理出足够多（大约5GB以上）的空间即可。
 
 Q: 如果点击完`Install Python 3.10.11`按钮再点击`Prepare Environment`按钮出现`Couldn't launch python`错误怎么办？
 
