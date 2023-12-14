@@ -8,7 +8,7 @@ Welcome to Mist-V2 Documentation
 
 .. _doc:
 
-.. image:: ./media/fig-index-title.png
+.. image:: ./media/title.png
 
 \
 
