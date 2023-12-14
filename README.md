@@ -325,33 +325,47 @@ WebUI含有两部分参数：常用参数和专业参数。前者为使用MistV2
 
 ![img/P56.png](source/media/installation/P56.png){width=75% height=auto}
 
-将要等待打水印的图片放在`src/data/img`文件夹：
+将要等待打水印的图片放在`mist-v2/src/data/img`文件夹：（示例图已经过原画师授权）
 
-[img/P16.png](source/media/installation/P16.png)
+![img/P57.png](source/media/installation/P57.png){width=50% height=auto}
 
-然后按照以下的参数填写：
+![img/P58.png](source/media/installation/P58.png){width=50% height=auto}
+
+![img/P59.png](source/media/installation/P59.png){width=50% height=auto}
+
+![img/P60.png](source/media/installation/P60.png){width=50% height=auto}
+
+![img/P61.png](source/media/installation/P61.png){width=50% height=auto}
+
+然后在Webui中按照以下的参数填写：
 
 | 参数 | 值 |
 | :-: | :-: |
 | Data Path | data/training |
 | Output Path | output |
-| | |
 | Target Model Path | stable-diffusion/stable-diffusion-1-5 |
-| Prompt | （按照个人喜好填写即可，这里的例子为masterpiece, best quality） |
-
-填写完毕后，点击Webui内的`Mist`这个按钮开始运行。出现类似以下内容说明已经成功处于运行中。
-
-[img/P18.png](source/media/installation/P18.png)
-
-在运行结束后，被打上水印的图片将放在`output`文件夹：
-
-![img/P61.png](source/media/installation/P61.png){width=50% height=auto}
+| Path to place contrast images | data/contrast |
+| Prompt | （按照个人喜好或实际情况填写即可，这里的例子为masterpiece, best quality） |
 
 ![img/P62.png](source/media/installation/P62.png){width=75% height=auto}
 
+填写完毕后，点击Webui内的`Mist`这个按钮开始运行：
+
+![img/P63.png](source/media/installation/P63.png){width=75% height=auto}
+
+命令行内出现类似以下内容说明已经成功处于运行中：
+
+![img/P64.png](source/media/installation/P64.png){width=75% height=auto}
+
+在运行结束后，被打上水印的图片将被放在`output`文件夹：
+
+![img/P65.png](source/media/installation/P65.png){width=50% height=auto}
+
+![img/P66.png](source/media/installation/P66.png){width=75% height=auto}
+
 可以点击图片查看效果：
 
-![img/P63.png](source/media/installation/P63.png){width=50% height=auto}
+![img/P67.png](source/media/installation/P67.png){width=75% height=auto}
 
 ## 常见问题
 
@@ -374,6 +388,6 @@ A: 这个是由于C盘剩余空间太小导致的，给C盘清理出足够多（
 
 Q: 如果点击完`Install Python 3.10.11`按钮再点击`Prepare Environment`按钮出现`Couldn't launch python`错误怎么办？
 
-![img/P60.png](source/media/installation/P60.png)
+![img/P68.png](source/media/installation/P68.png){width=75% height=auto}
 
 A: 这是安装完python之后环境变量没有更新导致的，重启电脑再运行启动器即可。
