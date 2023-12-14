@@ -173,17 +173,29 @@
 
 **步骤六**：通过启动器安装Git
 
-点击`Install Git`按钮安装Git即可，Git的安装均按照默认配置，既一直点击“Next”按钮即可。
+在启动器点击`Install Git`按钮安装Git：
 
-[img/P10.png](source/media/installation/P10.png)
+![img/P34.png](source/media/installation/P34.png){width=75% height=auto}
+
+Git的安装均按照默认配置，一直点击“Next”按钮即可。
+
+![img/P35.png](source/media/installation/P35.png){width=75% height=auto}
+
+![img/P36.png](source/media/installation/P36.png){width=75% height=auto}
+
+出现以下信息说明Git安装成功，点击“Finish”按钮即可：
+
+![img/P37.png](source/media/installation/P37.png){width=75% height=auto}
 
 **步骤七**：如果是中国用户，则可以选择对pip切换安装源，使得下载依赖包的速度更快
 
 如果要选择切换安装源，点击`Change Source`按钮即可：
 
-[img/P11.png](source/media/installation/P11.png)
+![img/P38.png](source/media/installation/P38.png){width=50% height=auto}
 
 如果要换回默认的源，点击`Reset Source`按钮即可：
+
+![img/P39.png](source/media/installation/P39.png){width=50% height=auto}
 
 **步骤八**：准备启动器的环境配置
 
@@ -191,7 +203,9 @@
 
 点击`Prepare Environment`按钮，即可进行启动器的环境配置。
 
-[img/P12.png](source/media/installation/P12.png)
+如果出现以下报错信息，说明Python没有成功安装，或者安装了但是环境变量配置没有生效，遇到这种情况重启电脑然后重新运行启动器即可：
+
+![img/P42.png](source/media/installation/P42.png)
 
 环境配置需要等待一段
 
