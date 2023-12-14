@@ -203,30 +203,71 @@ Git的安装均按照默认配置，一直点击“Next”按钮即可。
 
 点击`Prepare Environment`按钮，即可进行启动器的环境配置。
 
-如果出现以下报错信息，说明Python没有成功安装，或者安装了但是环境变量配置没有生效，遇到这种情况重启电脑然后重新运行启动器即可：
+![img/P40.png](source/media/installation/P40.png){width=75% height=auto}
 
-![img/P42.png](source/media/installation/P42.png)
+然后会弹出如下所示的命令行，表明进行启动器环境的安装：
 
-环境配置需要等待一段
+![img/P41.png](source/media/installation/P41.png){width=75% height=auto}
+
+环境配置需要等待一段时间，待命令行自动关闭之后，环境配置完成。
 
 如果要进行环境测试，点击`Test Environment`按钮即可。
 
-如果出现`Cuda is available: True`的情况，说明该机器是NVIDIA系列显卡，并且可以使用gpu模式运行。
+![img/P42.png](source/media/installation/P42.png){width=50% height=auto}
 
-[img/P13.png](source/media/installation/P13.png)
+如果出现`Cuda is available: True`的情况，说明该机器是Nvidia系列显卡，并且可以使用gpu模式运行。
+
+![img/P43.png](source/media/installation/P43.png){width=75% height=auto}
 
 如果出现`Cuda is available: False`的情况，说明该机器不可使用gpu模式运行，只能使用cpu模式运行。
 
-如果运行时出现如下所示的错误信息：
+如果点击`Test Environment`按钮时出现如下所示的错误信息：
 
-说明环境配置过程中出现了问题（例如命令行窗口中途突然关闭，）
+![img/P44.png](source/media/installation/P44.png){width=75% height=auto}
 
-如果要清除已经配置好的环境，点击`Clear Environment`按钮即可。
+说明环境配置过程中出现了问题（例如命令行窗口中途突然关闭，突然断网，C盘剩余空间不够等等），建议点击`Clear Environment`按钮清除已经配好的环境，然后再点击`Prepare Environment`按钮进行配置即可。
+
+![img/P45.png](source/media/installation/P45.png){width=50% height=auto}
 
 **步骤九**：放置水印的靶点模型
 
-【待补充】
+进入到项目的`mist-v2`文件夹：
 
+![img/P46.png](source/media/installation/P46.png){width=75% height=auto}
+
+然后再进入`src`文件夹：
+
+![img/P47.png](source/media/installation/P47.png){width=75% height=auto}
+
+之后我们关注其中的三个文件夹：
+
+![img/P48.png](source/media/installation/P48.png){width=75% height=auto}
+
+这三个文件夹的作用分别为：
+
+- `data`：便于存放要打上水印的图片和对比数据
+- `output`：用于输出打过水印的图片
+- `stable-diffusion`：用于存放水印的靶点模型
+
+先进入到`data`文件夹：
+
+![img/P49.png](source/media/installation/P49.png){width=50% height=auto}
+
+为了便于后续的使用，在`data`文件夹下面新建两个文件夹`contrast`和`img`：
+
+![img/P50.png](source/media/installation/P50.png){width=50% height=auto}
+
+然后进入到`stable-diffusion`文件夹：
+
+![img/P51.png](source/media/installation/P51.png){width=75% height=auto}
+
+将**步骤一**中`diffusers`文件夹下的`stable-diffusion-1-5`复制到启动器的`stable-diffusion`文件夹中：
+
+![img/P52.png](source/media/installation/P52.png){width=75% height=auto}
+
+![img/P53.png](source/media/installation/P53.png){width=75% height=auto}
+
+这样放置水印的靶点模型步骤已经完成。
 
 ## 使用
 
@@ -276,13 +317,15 @@ WebUI含有两部分参数：常用参数和专业参数。前者为使用MistV2
 
 完成环境配置之后，在启动器中点击`Run Mist`即可运行Mist Webui。
 
-[img/P14.png](source/media/installation/P14.png)
+![img/P54.png](source/media/installation/P54.png){width=50% height=auto}
+
+![img/P55.png](source/media/installation/P55.png){width=75% height=auto}
 
 查看Mist WebUI的方式是：使用任意一个浏览器，在地址栏输入`http://127.0.0.1:7860`即可。
 
-[img/P15.png](source/media/installation/P15.png)
+![img/P56.png](source/media/installation/P56.png){width=75% height=auto}
 
-将要等待打水印的图片放在`src/data/training`文件夹。
+将要等待打水印的图片放在`src/data/img`文件夹：
 
 [img/P16.png](source/media/installation/P16.png)
 
@@ -302,13 +345,13 @@ WebUI含有两部分参数：常用参数和专业参数。前者为使用MistV2
 
 在运行结束后，被打上水印的图片将放在`output`文件夹：
 
-![img/P51.png](source/media/installation/P51.png){width=50% height=auto}
+![img/P61.png](source/media/installation/P61.png){width=50% height=auto}
 
-![img/P52.png](source/media/installation/P52.png){width=75% height=auto}
+![img/P62.png](source/media/installation/P62.png){width=75% height=auto}
 
 可以点击图片查看效果：
 
-![img/P53.png](source/media/installation/P53.png){width=50% height=auto}
+![img/P63.png](source/media/installation/P63.png){width=50% height=auto}
 
 ## 常见问题
 
@@ -331,4 +374,6 @@ A: 这个是由于C盘剩余空间太小导致的，给C盘清理出足够多（
 
 Q: 如果点击完`Install Python 3.10.11`按钮再点击`Prepare Environment`按钮出现`Couldn't launch python`错误怎么办？
 
-A: 这是安装完python之后环境变量没有更新导致的，重启电脑再运行`Mist_GUI`即可。
+![img/P60.png](source/media/installation/P60.png)
+
+A: 这是安装完python之后环境变量没有更新导致的，重启电脑再运行启动器即可。
