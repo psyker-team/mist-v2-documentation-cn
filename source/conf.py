@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'mist-v2-documentation'
+project = 'mist-v2-documentation-cn'
 copyright = '2023, Caradryan'
 author = 'Caradryan'
 release = '0.0.1'

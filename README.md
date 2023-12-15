@@ -12,6 +12,7 @@
 
 ## 安装
 
+
 **步骤一**：从百度网盘或谷歌网盘安装Mist_v2
 
 百度网盘：[https://pan.baidu.com/s/1fZP4nFxlmmr0DiE54DJ7HQ](https://pan.baidu.com/s/1fZP4nFxlmmr0DiE54DJ7HQ)（提取码：m4nx）
@@ -187,7 +188,9 @@ Git的安装均按照默认配置，一直点击“Next”按钮即可。
 
 ![img/P37.png](source/media/installation/P37.png)
 
-**步骤七**：如果是中国用户，则可以选择对pip切换安装源，使得下载依赖包的速度更快
+**步骤七**：更换依赖包安装源(可选)
+
+Mist V2运行需要通过Python自带的pip安装一些Python依赖包。中国大陆用户可以选择将pip的安装源切换到国内，加快下载这些依赖包的速度。
 
 如果要选择切换安装源，点击`Change Source`按钮即可：
 
@@ -197,35 +200,35 @@ Git的安装均按照默认配置，一直点击“Next”按钮即可。
 
 ![img/P39.png](source/media/installation/P39.png)
 
-**步骤八**：准备启动器的环境配置
+**步骤八**：安装Mist V2需要的Python依赖包
 
 **（注：运行这一步之前确保先给C盘清理出足够多（大约5GB以上）的空间，目的是给要下载的依赖包腾出空间。**
 
-点击`Prepare Environment`按钮，即可进行启动器的环境配置。
+点击`Prepare Environment`按钮，即可进行Mist V2所需要的Python依赖包的安装。
 
 ![img/P40.png](source/media/installation/P40.png)
 
-然后会弹出如下所示的命令行，表明进行启动器环境的安装：
+之后，窗口会弹出如下所示的内容。这表明计算机正在进行依赖包的安装。
 
 ![img/P41.png](source/media/installation/P41.png)
 
-环境配置需要等待一段时间，待命令行自动关闭之后，环境配置完成。
+依赖包的安装需要等待一段时间。待窗口自动关闭之后，依赖包安装完成。
 
-如果要进行环境测试，点击`Test Environment`按钮即可。
+此时，可点击`Test Environment`按钮进行依赖包安装完整性的测试。
 
 ![img/P42.png](source/media/installation/P42.png)
 
-如果出现`Cuda is available: True`的情况，说明该机器是Nvidia系列显卡，并且可以使用gpu模式运行。
+测试开始后，如果窗口出现`Cuda is available: True`的内容，说明该机器是Nvidia系列显卡，并且可以使用gpu模式运行。
 
 ![img/P43.png](source/media/installation/P43.png)
 
-如果出现`Cuda is available: False`的情况，说明该机器不可使用gpu模式运行，只能使用cpu模式运行。
+如果窗口出现`Cuda is available: False`的情况，说明该计算机不可使用gpu模式运行，只能使用cpu模式运行。
 
 如果点击`Test Environment`按钮时出现如下所示的错误信息：
 
 ![img/P44.png](source/media/installation/P44.png)
 
-说明环境配置过程中出现了问题（例如命令行窗口中途突然关闭，突然断网，C盘剩余空间不够等等），建议点击`Clear Environment`按钮清除已经配好的环境，然后再点击`Prepare Environment`按钮进行配置即可。
+这说明依赖包安装过程中出现了问题（例如命令行窗口中途突然关闭，突然断网，C盘剩余空间不够等等），建议点击`Clear Environment`按钮清除已经安装的依赖包，然后再点击`Prepare Environment`按钮进行重新安装。
 
 ![img/P45.png](source/media/installation/P45.png)
 
@@ -384,9 +387,9 @@ A matching Triton is not available, some optimizations will not be enabled.
 Error caught was: No module named 'triton'
 ```
 
-A: 这个是由于`xformers`库安装在Windows环境下导致的，直接忽略即可，不会影响Mist的使用。
+A: 这个是由于`xformers`依赖包安装在Windows环境下导致的，直接忽略即可，不会影响Mist的使用。
 
-Q: 如果配置环境过程中出现`No space left on device`怎么办？
+Q: 如果安装依赖包的过程中中出现`No space left on device`怎么办？
 
 A: 这个是由于C盘剩余空间太小导致的，给C盘清理出足够多（大约5GB以上）的空间即可。
 
