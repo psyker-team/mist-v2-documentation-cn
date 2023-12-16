@@ -23,23 +23,23 @@
 
 安装完百度网盘客户端后，点击上面的百度网盘链接，进入以下界面：
 
-[img/P1.png](source/media/installation/P1.png)
+![img/P1.png](source/media/installation/P1.png)
 
 之后单击`Mist_v2`文件夹，之后点击“下载”按钮：
 
-[img/P2.png](source/media/installation/P2.png)
+![img/P2.png](source/media/installation/P2.png)
 
 之后在弹出的客户端界面，指定下载路径之后，点击“下载”即可：
 
-[img/P3.png](source/media/installation/P3.png)
+![img/P3.png](source/media/installation/P3.png)
 
-[img/P4.png](source/media/installation/P4.png)
+![img/P4.png](source/media/installation/P4.png)
 
 等待下载完成之后，在下载路径就会出现`Mist_v2`文件夹：
 
-[img/P5.png](source/media/installation/P5.png)
+![img/P5.png](source/media/installation/P5.png)
 
-[img/P6.png](source/media/installation/P6.png)
+![img/P6.png](source/media/installation/P6.png)
 
 `Mist_v2`的文件结构如下：
 
@@ -48,17 +48,17 @@
 
 `diffusers`文件夹里的内容（将会被用于**步骤九**）：
 
-[img/P7.png](source/media/installation/P7.png)
+![img/P7.png](source/media/installation/P7.png)
 
 `Mist启动器`文件夹里的内容：
 
-[img/P8.png](source/media/installation/P8.png)
+![img/P8.png](source/media/installation/P8.png)
 
 之后，在`Mist启动器`文件夹里面任选`Mist启动器.rar`或`Mist启动器.zip`其中一个压缩包进行解压缩即可，然后你可以把这个启动器放在任何一个你喜欢的位置（尽量放在除C盘以外的路径），这里使用的路径为`E:\Mist启动器`：
 
-[img/P9.png](source/media/installation/P9.png)
+![img/P9.png](source/media/installation/P9.png)
 
-[img/P10.png](source/media/installation/P10.png)
+![img/P10.png](source/media/installation/P10.png)
 
 其中的`Mist启动器.exe`就是Mist启动器，单击即可运行。
 
@@ -66,7 +66,7 @@
 
 点击上面的谷歌网盘链接，进入以下界面：
 
-[img/P11.png](source/media/installation/P11.png)
+![img/P11.png](source/media/installation/P11.png)
 
 将其中的所有文件全部下载即可，使用方法和百度网盘下载的版本同理。
 
@@ -74,25 +74,25 @@
 
 点击开始菜单，并在搜索栏搜索并单击“编辑系统环境变量”
 
-[img/P12.png](source/media/installation/P12.png)
+![img/P12.png](source/media/installation/P12.png)
 
 单击后出现以下界面，然后点击“环境变量”：
 
-[img/P13.png](source/media/installation/P13.png)
+![img/P13.png](source/media/installation/P13.png)
 
 进入到这个界面，然后双击上方界面的"Path"这一栏：
 
-[img/P14.png](source/media/installation/P14.png)
+![img/P14.png](source/media/installation/P14.png)
 
-[img/P15.png](source/media/installation/P15.png)
+![img/P15.png](source/media/installation/P15.png)
 
 然后如果列表中含有以`Microsoft\WindowsApps`结尾的这一项，先单击选中这一项，然后点击“删除”按钮进行删除：
 
-[img/P16.png](source/media/installation/P16.png)
+![img/P16.png](source/media/installation/P16.png)
 
 之后点击“确定”按钮使得修改生效：
 
-[img/P17.png](source/media/installation/P17.png)
+![img/P17.png](source/media/installation/P17.png)
 
 **必要时可以重启电脑使得环境配置生效。**
 
@@ -104,31 +104,31 @@
 
 在整合包中已经包含了启动器运行所需的动态库，在`运行库`文件夹内：
 
-[img/P18.png](source/media/installation/P18.png)
+![img/P18.png](source/media/installation/P18.png)
 
 双击`windowsdesktop-runtime-7.0.13-win-x64.exe`进行安装即可：
 
-[img/P19.png](source/media/installation/P19.png)
+![img/P19.png](source/media/installation/P19.png)
 
-[img/P20.png](source/media/installation/P20.png)
+![img/P20.png](source/media/installation/P20.png)
 
 出现以下信息说明安装成功：
 
-[img/P21.png](source/media/installation/P21.png)
+![img/P21.png](source/media/installation/P21.png)
 
 另外地，也可以通过点击以下链接下载所需的动态库：[https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/runtime-desktop-7.0.13-windows-x64-installer](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/runtime-desktop-7.0.13-windows-x64-installer)
 
-[img/P22.png](source/media/installation/P22.png)
+![img/P22.png](source/media/installation/P22.png)
 
 **步骤四**：运行启动器
 
 双击项目里的`Mist启动器.exe`：
 
-[img/P23.png](source/media/installation/P23.png)
+![img/P23.png](source/media/installation/P23.png)
 
 然后会弹出以下界面：
 
-[img/P24.png](source/media/installation/P24.png)
+![img/P24.png](source/media/installation/P24.png)
 
 如果没有正常弹出界面，请检查**步骤三**有没有出现问题。
 
@@ -138,37 +138,37 @@
 
 点击开始菜单，并在搜索栏搜索并单击“添加或删除应用程序”：
 
-[img/P25.png](source/media/installation/P25.png)
+![img/P25.png](source/media/installation/P25.png)
 
 然后在“应用列表”里面搜索“python”：
 
-[img/P26.png](source/media/installation/P26.png)
+![img/P26.png](source/media/installation/P26.png)
 
 之后点击右面的三个点，然后点击“卸载”：
 
-[img/P27.png](source/media/installation/P27.png)
+![img/P27.png](source/media/installation/P27.png)
 
 然后会卸载当前电脑上已经安装的python：
 
-[img/P28.png](source/media/installation/P28.png)
+![img/P28.png](source/media/installation/P28.png)
 
 出现以下信息说明卸载成功，点击“Close”按钮退出即可：
 
-[img/P29.png](source/media/installation/P29.png)
+![img/P29.png](source/media/installation/P29.png)
 
 然后点击启动器的`安装 Python 3.10.11`按钮，会自动弹出python的安装页面：
 
-[img/P30.png](source/media/installation/P30.png)
+![img/P30.png](source/media/installation/P30.png)
 
-[img/P31.png](source/media/installation/P31.png)
+![img/P31.png](source/media/installation/P31.png)
 
 记得勾选`Add Python 3.10 to PATH`，之后点击`Install Now`安装即可：
 
-[img/P32.png](source/media/installation/P32.png)
+![img/P32.png](source/media/installation/P32.png)
 
 出现以下信息说明安装成功，点击“Close”按钮关闭即可：
 
-[img/P33.png](source/media/installation/P33.png)
+![img/P33.png](source/media/installation/P33.png)
 
 **安装之后记得重启电脑，使得环境变量配置生效。**
 
@@ -176,17 +176,17 @@
 
 在启动器点击`安装 Git`按钮安装Git：
 
-[img/P34.png](source/media/installation/P34.png)
+![img/P34.png](source/media/installation/P34.png)
 
 Git的安装均按照默认配置，一直点击“Next”按钮即可。
 
-[img/P35.png](source/media/installation/P35.png)
+![img/P35.png](source/media/installation/P35.png)
 
-[img/P36.png](source/media/installation/P36.png)
+![img/P36.png](source/media/installation/P36.png)
 
 出现以下信息说明Git安装成功，点击“Finish”按钮即可：
 
-[img/P37.png](source/media/installation/P37.png)
+![img/P37.png](source/media/installation/P37.png)
 
 **步骤七**：更换依赖包安装源（可选）
 
@@ -194,11 +194,11 @@ Mist V2运行需要通过Python自带的pip安装一些Python依赖包。中国�
 
 如果要选择更换安装源，点击`变更源`按钮即可：
 
-[img/P38.png](source/media/installation/P38.png)
+![img/P38.png](source/media/installation/P38.png)
 
 如果要换回默认的源，点击`重置源`按钮即可：
 
-[img/P39.png](source/media/installation/P39.png)
+![img/P39.png](source/media/installation/P39.png)
 
 **步骤八**：安装Mist V2需要的Python依赖包
 
@@ -208,31 +208,33 @@ Mist V2运行需要通过Python自带的pip安装一些Python依赖包。中国�
 
 点击`配置环境`按钮，即可进行Mist V2所需要的Python依赖包的安装。
 
-[img/P40.png](source/media/installation/P40.png)
+![img/P40.png](source/media/installation/P40.png)
 
 之后，窗口会弹出如下所示的内容。这表明计算机正在进行依赖包的安装。
 
-[img/P41.png](source/media/installation/P41.png)
+![img/P41.png](source/media/installation/P41.png)
 
 依赖包的安装需要等待一段时间。待命令行出现`Hello Mist!`时，依赖包安装完成，此时按任意键退出命令行即可：
 
+[img/P42.png](source/media/installation/P42.png)
+
 然后可点击`测试环境`按钮进行依赖包安装完整性的测试。
 
-[img/P42.png](source/media/installation/P42.png)
+[img/P43.png](source/media/installation/P43.png)
 
 测试开始后，如果窗口出现`Cuda is available: True`的内容，说明该机器是Nvidia系列显卡，并且可以使用gpu模式运行。
 
-[img/P43.png](source/media/installation/P43.png)
+[img/P44.png](source/media/installation/P44.png)
 
 如果窗口出现`Cuda is available: False`的情况，说明该计算机不可使用gpu模式运行，只能使用cpu模式运行。
 
 如果点击`测试环境`按钮时出现如下所示的错误信息：
 
-[img/P44.png](source/media/installation/P44.png)
+![img/P45.png](source/media/installation/P45.png)
 
 这说明依赖包安装过程中出现了问题（例如命令行窗口中途突然关闭，突然断网，C盘剩余空间不够等等），建议点击`清除环境`按钮清除已经安装的依赖包，然后再点击`配置环境`按钮进行重新安装。
 
-[img/P45.png](source/media/installation/P45.png)
+![img/P46.png](source/media/installation/P46.png)
 
 **步骤九**：放置水印的靶点模型
 
