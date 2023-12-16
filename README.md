@@ -13,7 +13,7 @@
 ## 安装
 
 
-**步骤一**：从百度网盘或谷歌网盘安装Mist_v2
+**步骤一**：从百度网盘或谷歌网盘安装Mist V2
 
 百度网盘：[https://pan.baidu.com/s/1fZP4nFxlmmr0DiE54DJ7HQ](https://pan.baidu.com/s/1fZP4nFxlmmr0DiE54DJ7HQ)（提取码：m4nx）
 
@@ -44,23 +44,23 @@
 `Mist_v2`的文件结构如下：
 
 - diffusers：水印的靶点模型（为开源版本的Stable Diffusion v1.5）
-- Mist_GUI：Mist启动器对应的压缩包
+- Mist启动器：Mist启动器对应的压缩包
 
 `diffusers`文件夹里的内容（将会被用于**步骤九**）：
 
 ![img/P7.png](source/media/installation/P7.png)
 
-`Mist_GUI`文件夹里的内容：
+`Mist启动器`文件夹里的内容：
 
 ![img/P8.png](source/media/installation/P8.png)
 
-之后，在`Mist_GUI`文件夹里面任选`Mist_GUI.rar`或`Mist_GUI.zip`其中一个压缩包进行解压缩即可，然后你可以把这个启动器放在任何一个你喜欢的位置（尽量放在除C盘以外的路径），这里使用的路径为`E:\Mist_GUI`：
+之后，在`Mist启动器`文件夹里面任选`Mist启动器.rar`或`Mist启动器.zip`其中一个压缩包进行解压缩即可，然后你可以把这个启动器放在任何一个你喜欢的位置（尽量放在除C盘以外的路径），这里使用的路径为`E:\Mist启动器`：
 
 ![img/P9.png](source/media/installation/P9.png)
 
-![img/P9.png](source/media/installation/P10.png)
+![img/P10.png](source/media/installation/P10.png)
 
-其中的`Mist_GUI.exe`就是Mist启动器，单击即可运行。
+其中的`Mist启动器.exe`就是Mist启动器，单击即可运行。
 
 从谷歌网盘下载：
 
@@ -102,7 +102,7 @@
 
 该程序采用`.NET 7.0`编写，因此需要下载和`.NET 7.0`相关的动态库.
 
-在整合包中已经包含了启动器运行所需的动态库，在`runtime`文件夹内：
+在整合包中已经包含了启动器运行所需的动态库，在`运行库`文件夹内：
 
 ![img/P18.png](source/media/installation/P18.png)
 
@@ -122,7 +122,7 @@
 
 **步骤四**：运行启动器
 
-双击项目里的`Mist_GUI.exe`：
+双击项目里的`Mist启动器.exe`：
 
 ![img/P23.png](source/media/installation/P23.png)
 
@@ -156,7 +156,7 @@
 
 ![img/P29.png](source/media/installation/P29.png)
 
-然后点击启动器的`Install Python 3.10.11`按钮，会自动弹出python的安装页面：
+然后点击启动器的`安装 Python 3.10.11`按钮，会自动弹出python的安装页面：
 
 ![img/P30.png](source/media/installation/P30.png)
 
@@ -174,7 +174,7 @@
 
 **步骤六**：通过启动器安装Git
 
-在启动器点击`Install Git`按钮安装Git：
+在启动器点击`安装 Git`按钮安装Git：
 
 ![img/P34.png](source/media/installation/P34.png)
 
@@ -188,15 +188,15 @@ Git的安装均按照默认配置，一直点击“Next”按钮即可。
 
 ![img/P37.png](source/media/installation/P37.png)
 
-**步骤七**：更换依赖包安装源(可选)
+**步骤七**：更换依赖包安装源（可选）
 
 Mist V2运行需要通过Python自带的pip安装一些Python依赖包。中国大陆用户可以选择将pip的安装源切换到国内，加快下载这些依赖包的速度。
 
-如果要选择切换安装源，点击`Change Source`按钮即可：
+如果要选择更换安装源，点击`变更源`按钮即可：
 
 ![img/P38.png](source/media/installation/P38.png)
 
-如果要换回默认的源，点击`Reset Source`按钮即可：
+如果要换回默认的源，点击`重置源`按钮即可：
 
 ![img/P39.png](source/media/installation/P39.png)
 
@@ -204,7 +204,9 @@ Mist V2运行需要通过Python自带的pip安装一些Python依赖包。中国�
 
 **（注：运行这一步之前确保先给C盘清理出足够多（大约5GB以上）的空间，目的是给要下载的依赖包腾出空间。**
 
-点击`Prepare Environment`按钮，即可进行Mist V2所需要的Python依赖包的安装。
+这里所说的`环境`指的是运行Mist V2时所需要的依赖包和组件。
+
+点击`配置环境`按钮，即可进行Mist V2所需要的Python依赖包的安装。
 
 ![img/P40.png](source/media/installation/P40.png)
 
@@ -212,39 +214,41 @@ Mist V2运行需要通过Python自带的pip安装一些Python依赖包。中国�
 
 ![img/P41.png](source/media/installation/P41.png)
 
-依赖包的安装需要等待一段时间。待窗口自动关闭之后，依赖包安装完成。
-
-此时，可点击`Test Environment`按钮进行依赖包安装完整性的测试。
+依赖包的安装需要等待一段时间。待命令行出现`Hello Mist!`时，依赖包安装完成，此时按任意键退出命令行即可：
 
 ![img/P42.png](source/media/installation/P42.png)
 
-测试开始后，如果窗口出现`Cuda is available: True`的内容，说明该机器是Nvidia系列显卡，并且可以使用gpu模式运行。
+然后可点击`测试环境`按钮进行依赖包安装完整性的测试。
 
 ![img/P43.png](source/media/installation/P43.png)
 
-如果窗口出现`Cuda is available: False`的情况，说明该计算机不可使用gpu模式运行，只能使用cpu模式运行。
-
-如果点击`Test Environment`按钮时出现如下所示的错误信息：
+测试开始后，如果窗口出现`Cuda is available: True`的内容，说明该机器是Nvidia系列显卡，并且可以使用gpu模式运行。
 
 ![img/P44.png](source/media/installation/P44.png)
 
-这说明依赖包安装过程中出现了问题（例如命令行窗口中途突然关闭，突然断网，C盘剩余空间不够等等），建议点击`Clear Environment`按钮清除已经安装的依赖包，然后再点击`Prepare Environment`按钮进行重新安装。
+如果窗口出现`Cuda is available: False`的情况，说明该计算机不可使用gpu模式运行，只能使用cpu模式运行。
+
+如果点击`测试环境`按钮时出现如下所示的错误信息：
 
 ![img/P45.png](source/media/installation/P45.png)
 
-**步骤九**：放置水印的靶点模型
-
-进入到项目的`mist-v2`文件夹：
+这说明依赖包安装过程中出现了问题（例如命令行窗口中途突然关闭，突然断网，C盘剩余空间不够等等），建议点击`清除环境`按钮清除已经安装的依赖包，然后再点击`配置环境`按钮进行重新安装。
 
 ![img/P46.png](source/media/installation/P46.png)
 
-然后再进入`src`文件夹：
+**步骤九**：放置水印的靶点模型
+
+进入到Mist启动器的`mist-v2`文件夹：
 
 ![img/P47.png](source/media/installation/P47.png)
 
-之后我们关注其中的三个文件夹：
+然后再进入`src`文件夹：
 
 ![img/P48.png](source/media/installation/P48.png)
+
+之后我们关注其中的三个文件夹：
+
+![img/P49.png](source/media/installation/P49.png)
 
 这三个文件夹的作用分别为：
 
@@ -254,21 +258,21 @@ Mist V2运行需要通过Python自带的pip安装一些Python依赖包。中国�
 
 先进入到`data`文件夹：
 
-![img/P49.png](source/media/installation/P49.png)
+![img/P50.png](source/media/installation/P50.png)
 
 为了便于后续的使用，在`data`文件夹下面新建两个文件夹`contrast`和`img`：
 
-![img/P50.png](source/media/installation/P50.png)
+![img/P51.png](source/media/installation/P51.png)
 
 然后进入到`stable-diffusion`文件夹：
 
-![img/P51.png](source/media/installation/P51.png)
-
-将**步骤一**中`diffusers`文件夹下的`stable-diffusion-1-5`复制到启动器的`stable-diffusion`文件夹中：
-
 ![img/P52.png](source/media/installation/P52.png)
 
+将**步骤一**中`diffusers`文件夹下的`stable-diffusion-1-5`复制到启动器的`stable-diffusion`文件夹中（注意要将文件夹作为一个整体复制）：
+
 ![img/P53.png](source/media/installation/P53.png)
+
+![img/P54.png](source/media/installation/P54.png)
 
 这样放置水印的靶点模型步骤已经完成。
 
@@ -278,9 +282,13 @@ Mist V2运行需要通过Python自带的pip安装一些Python依赖包。中国�
 
 Mist WebUI的使用界面如下图所示：
 
-![img/P54.png](source/media/installation/P54.png)
+**常用参数**：
 
 ![img/P55.png](source/media/installation/P55.png)
+
+**专业参数**：
+
+![img/P56.png](source/media/installation/P56.png)
 
 **（重要）如何选择一次运行Mist添加水印的图片**：选择画风、内容具有一致性的5-10张图片一同添加水印为宜，一次添加水印的总图片数切忌超过15张。
 
@@ -322,61 +330,61 @@ WebUI含有两部分参数：常用参数和专业参数。前者为使用MistV2
 
 ### 使用实例
 
-完成环境配置之后，在启动器中点击`Run Mist`即可运行Mist Webui。
-
-![img/P56.png](source/media/installation/P56.png)
+完成环境配置之后，在启动器中点击`启动 Mist`即可运行Mist Webui。
 
 ![img/P57.png](source/media/installation/P57.png)
 
-查看Mist WebUI的方式是：使用任意一个浏览器，在地址栏输入`http://127.0.0.1:7860`即可。
-
 ![img/P58.png](source/media/installation/P58.png)
 
-将要等待打水印的图片放在`mist-v2/src/data/img`文件夹：（示例图已经过原画师授权）
+查看Mist WebUI的方式是：使用任意一个浏览器，在地址栏输入`http://127.0.0.1:7860`即可。
 
 ![img/P59.png](source/media/installation/P59.png)
+
+将要等待打水印的图片放在`mist-v2/src/data/img`文件夹：（示例图已经过原画师授权）
 
 ![img/P60.png](source/media/installation/P60.png)
 
 ![img/P61.png](source/media/installation/P61.png)
 
-![img/P62.png](source/media/installation/P60.png)
+![img/P62.png](source/media/installation/P62.png)
 
 ![img/P63.png](source/media/installation/P63.png)
+
+![img/P64.png](source/media/installation/P64.png)
 
 然后在Webui中按照以下的参数填写：
 
 | 参数 | 值 |
 | :-: | :-: |
-| Data Path | data/training |
+| Data Path | data/img |
 | Output Path | output |
 | Target Model Path | stable-diffusion/stable-diffusion-1-5 |
 | Path to place contrast images | data/contrast |
 | Prompt | （按照个人喜好或实际情况填写即可，这里的例子为masterpiece, best quality） |
 
-![img/P64.png](source/media/installation/P64.png)
+![img/P65.png](source/media/installation/P65.png)
 
 填写完毕后，点击Webui内的`Mist`这个按钮开始运行：
 
-![img/P65.png](source/media/installation/P65.png)
+![img/P66.png](source/media/installation/P66.png)
 
 命令行内出现类似以下内容说明已经成功处于运行中：
 
-![img/P66.png](source/media/installation/P66.png)
+![img/P67.png](source/media/installation/P67.png)
 
 在运行结束后，被打上水印的图片将被放在`output`文件夹：
 
-![img/P67.png](source/media/installation/P67.png)
-
 ![img/P68.png](source/media/installation/P68.png)
-
-可以点击图片查看效果：
 
 ![img/P69.png](source/media/installation/P69.png)
 
+可以点击图片查看效果：
+
+![img/P70.png](source/media/installation/P70.png)
+
 ## 常见问题
 
-Q: 点击`Prepare Environment`按钮运行不了，并遇到打开Microsoft应用商店的情况怎么办？
+Q: 点击`配置环境`按钮运行不了，并遇到打开Microsoft应用商店的情况怎么办？
 
 A: 解决方法参见步骤二。（或者可以参考该解决方案链接：[https://blog.csdn.net/qq_42365887/article/details/132486389](https://blog.csdn.net/qq_42365887/article/details/132486389)）
 
@@ -387,14 +395,12 @@ A matching Triton is not available, some optimizations will not be enabled.
 Error caught was: No module named 'triton'
 ```
 
-A: 这个是由于`xformers`依赖包安装在Windows环境下导致的，直接忽略即可，不会影响Mist的使用。
+A: 这个是由于`xformers`依赖包安装在Windows环境下导致的，直接忽略即可，不会影响Mist V2的使用。
 
 Q: 如果安装依赖包的过程中中出现`No space left on device`怎么办？
 
 A: 这个是由于C盘剩余空间太小导致的，给C盘清理出足够多（大约5GB以上）的空间即可。
 
-Q: 如果点击完`Install Python 3.10.11`按钮再点击`Prepare Environment`按钮出现`Couldn't launch python`错误怎么办？
-
-![img/P70.png](source/media/installation/P70.png)
+Q: 如果点击完`安装 Python 3.10.11`按钮再点击`配置环境`按钮出现`Couldn't launch python`错误怎么办？
 
 A: 这是安装完python之后环境变量没有更新导致的，重启电脑再运行启动器即可。
